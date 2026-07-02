@@ -2,11 +2,11 @@
   "name": "Everforest Light",
   "author": "",
   "globals": {
-    "background": "#fdf6e3",
+    "background": "var(bg0)",
     "foreground": "#5c6a72",
     "caret": "#5c6a72",
     "block_caret": "#5c6a72",
-    "line_highlight": "#efebd470",
+    "line_highlight": "var(bg1)",
     "misspelling": "#f1706f",
     "fold_marker": "#8da101",
     "accent": "#8da101",
@@ -15,12 +15,12 @@
     "line_diff_added": "#6ec39830",
     "line_diff_modified": "#3a94c5a0",
     "line_diff_deleted": "#f1706f30",
-    "selection": "#e6e2cca0",
+    "selection": "var(bg_visual)",
     "inactive_selection": "#e6e2cc80",
     "inactive_selection_foreground": "#879686",
-    "highlight": "#a4bb4a40",
-    "find_highlight": "#a4bb4a40",
-    "find_highlight_foreground": "#8da101",
+    "highlight": "var(green)",
+    "find_highlight": "var(bg_green)",
+    "find_highlight_foreground": "var(green)",
     "guide": "#87968620",
     "active_guide": "#5c6a72",
     "stack_guide": "#939f91",
@@ -226,7 +226,7 @@
       "font_style": "italic"
     },
     {
-      "scope": "markup.bold markup.italic",
+      "scope": "markup.bold markup.italic | markup.italic markup.bold",
       "foreground": "var(red)",
       "font_style": "italic bold"
     },
@@ -273,29 +273,33 @@
       "font_style": "italic"
     },
     {
-      "scope": "markup.heading.alert.note | markup.info",
+      "scope": "markup.info | markup.highlight | markup.heading.alert.note | markup.heading.admonition.note entity.name.abmonition",
       "background": "var(bg_blue)",
       "foreground": "var(blue)"
     },
     {
-      "scope": "markup.heading.alert.tip",
+      "scope": "markup.heading.alert.tip | markup.heading.admonition.tip entity.name.abmonition",
       "background": "var(bg_green)",
       "foreground": "var(green)"
     },
     {
-      "scope": "markup.heading.alert.important",
+      "scope": "markup.heading.alert.important | markup.heading.admonition.important entity.name.abmonition",
       "background": "var(bg_purple)",
       "foreground": "var(purple)"
     },
     {
-      "scope": "markup.heading.alert.warning",
+      "scope": "markup.heading.alert.warning | markup.heading.admonition.warning entity.name.abmonition",
       "background": "var(bg_yellow)",
       "foreground": "var(yellow)"
     },
     {
-      "scope": "markup.heading.alert.caution",
+      "scope": "markup.heading.alert.caution | markup.heading.admonition.caution entity.name.abmonition | markup.heading.admonition.error entity.name.abmonition",
       "background": "var(bg_red)",
       "foreground": "var(red)"
+    },
+    {
+      "scope": "markup.heading.admonition.quote entity.name.abmonition | markup.heading.admonition.other entity.name.abmonition",
+      "background": "var(bg3)"
     },
     {
       "scope": "markup.raw.inline | markup.raw.block",
@@ -321,7 +325,7 @@
       "font_style": "regular"
     },
     {
-      "scope": "punctuation.definition.blockquote",
+      "scope": "punctuation.definition.blockquote | punctuation.definition.admonition",
       "background": "color(var(grey0) alpha(0.25))",
       "foreground": "color(var(grey0) alpha(0.25))"
     },

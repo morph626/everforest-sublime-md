@@ -18,7 +18,7 @@
     "selection": "var(bg_visual)",
     "inactive_selection": "#47525880",
     "inactive_selection_foreground": "#9aa79d",
-    "highlight": "var(aqua)",
+    "highlight": "var(green)",
     "find_highlight": "var(bg_green)",
     "find_highlight_foreground": "var(green)",
     "guide": "#9aa79d20",
@@ -181,6 +181,12 @@
       "scope": "variable.object.property, support.variable.property, variable.other.property, variable.other.object.property, variable.other.enummember, variable.other.member, meta.object-literal.key"
     },
     {
+      "name": "Delimiter",
+      "foreground": "#5c6a72",
+      "font_style": 0,
+      "scope": "punctuation, meta.brace, meta.delimiter, meta.bracket"
+    },
+    {
       "name": "Markdown header default",
       "font_style": "bold italic",
       "scope": "markup.heading | entity.name.section"
@@ -220,7 +226,7 @@
       "font_style": "italic"
     },
     {
-      "scope": "markup.bold markup.italic | mark.italic markup.bold",
+      "scope": "markup.bold markup.italic | markup.italic markup.bold",
       "foreground": "var(red)",
       "font_style": "italic bold"
     },
@@ -267,29 +273,33 @@
       "font_style": "italic"
     },
     {
-      "scope": "markup.heading.alert.note | markup.info",
+      "scope": "markup.info | markup.highlight | markup.heading.alert.note | markup.heading.admonition.note entity.name.abmonition",
       "background": "var(bg_blue)",
       "foreground": "var(blue)"
     },
     {
-      "scope": "markup.heading.alert.tip",
+      "scope": "markup.heading.alert.tip | markup.heading.admonition.tip entity.name.abmonition",
       "background": "var(bg_green)",
       "foreground": "var(green)"
     },
     {
-      "scope": "markup.heading.alert.important",
+      "scope": "markup.heading.alert.important | markup.heading.admonition.important entity.name.abmonition",
       "background": "var(bg_purple)",
       "foreground": "var(purple)"
     },
     {
-      "scope": "markup.heading.alert.warning",
+      "scope": "markup.heading.alert.warning | markup.heading.admonition.warning entity.name.abmonition",
       "background": "var(bg_yellow)",
       "foreground": "var(yellow)"
     },
     {
-      "scope": "markup.heading.alert.caution",
+      "scope": "markup.heading.alert.caution | markup.heading.admonition.caution entity.name.abmonition | markup.heading.admonition.error entity.name.abmonition",
       "background": "var(bg_red)",
       "foreground": "var(red)"
+    },
+    {
+      "scope": "markup.heading.admonition.quote entity.name.abmonition | markup.heading.admonition.other entity.name.abmonition",
+      "background": "var(bg3)"
     },
     {
       "scope": "markup.raw.inline | markup.raw.block",
@@ -315,7 +325,7 @@
       "font_style": "regular"
     },
     {
-      "scope": "punctuation.definition.blockquote",
+      "scope": "punctuation.definition.blockquote | punctuation.definition.admonition",
       "background": "color(var(grey0) alpha(0.25))",
       "foreground": "color(var(grey0) alpha(0.25))"
     },
