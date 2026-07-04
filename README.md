@@ -2,7 +2,7 @@
 
 This theme is forked from @a-n-d-a-i's Sublime Text conversion ([found here](https://github.com/a-n-d-a-i/everforest-sublime "everforest-sublime")) of @sainnhe's everforest theme orignally for VS Code [found here](https://github.com/sainnhe/everforest/ "everforest").
 
-I use Sublime Text to work on markdown documents and I was missing syntax highlighting, and I love the solarized themes and the colour green so when I stumbled on everforest I went for a stroll and come back with some more extensive highlighting:
+I use Sublime Text to work on markdown documents and I was missing syntax highlighting. I love the solarized themes and the colour green so when I stumbled on everforest I went for a stroll and came back with some more extensive highlighting:
 
 ![Everforst Sublime MD Light](Screenshot_Markdown_Light.jpg "Everforest Sublime MD Light")
 ![Everforst Sublime MD Dark](Screenshot_Markdown_Dark.jpg "Everforest Sublime MD Dark")
